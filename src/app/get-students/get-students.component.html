@@ -1,0 +1,18 @@
+<div class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Marks</th>
+                <th>Degree</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let student of students; i as index">
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.marks}}</td>
+            <td>{{student.degree}}</td>
+            <td><button type="button" (click)='updateStudent(student)' class="btn btn-primary">Update</button></td>
+            <td><button type="button" (click)='deleteStudent(student)' class="btn btn-primary">Delete</button></td>
+        </tr>
+</div>

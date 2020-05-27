@@ -1,0 +1,18 @@
+<div class="col-md-4 offset-md-4">
+    <div class="card">
+        <div class="card-header">Update Student</div>
+        <div class="card-body"> 
+            <form #studentForm='ngForm' (ngSubmit)='update(studentForm)'>
+                <input type="hidden" name="id" id="id" class="form-control mb-3" #id='ngModel' ngModel [(ngModel)]="service.selectedStudent.id" placeholder="Enter id..">
+                <input type="text" name="name" id="name" class="form-control mb-3" #name='ngModel' ngModel [(ngModel)]="service.selectedStudent.name" placeholder="Enter fullname..">
+                <input type="text" name="age" id="age" class="form-control mb-3" #age='ngModel' ngModel [(ngModel)]="service.selectedStudent.age" placeholder="Enter age..">
+                <input type="text" name="marks" id="marks" class="form-control mb-3" #marks='ngModel'  ngModel [(ngModel)]="service.selectedStudent.marks" placeholder="Enter marks..">
+                <input type="text" name="degree" id="degree" class="form-control mb-3" #degree='ngModel' ngModel [(ngModel)]="service.selectedStudent.degree" placeholder="Enter degree.."> 
+                <div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </form>    
+        </div>
+        <div class="card-footer"></div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="col-md-4 offset-md-4">
+    <div class="card">
+        <div class="card-header">Add Student</div>
+        <div class="card-body"> 
+            <form #studentForm='ngForm' (ngSubmit)='addStudent(studentForm)'>
+                <input type="text" name="name" id="name" class="form-control mb-3" #name='ngModel' ngModel placeholder="Enter fullname..">
+                <input type="text" name="age" id="age" class="form-control mb-3" #age='ngModel' ngModel placeholder="Enter age..">
+                <input type="text" name="marks" id="marks" class="form-control mb-3" #marks='ngModel' ngModel placeholder="Enter marks..">
+                <input type="text" name="degree" id="degree" class="form-control mb-3" #degree='ngModel' ngModel placeholder="Enter degree.."> 
+                <div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="card-footer"></div>
+    </div>
+</div>
